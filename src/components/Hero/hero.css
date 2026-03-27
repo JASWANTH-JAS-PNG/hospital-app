@@ -1,0 +1,81 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-image: url("https://img.freepik.com/premium-photo/medicine-doctor-with-stethoscope-hand-hospital-background-medical-technology-healthcare-medical-concept_233554-918.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 500px;
+  position: relative;
+}
+
+
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text, .hero-image {
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  background-color: #2a5c8e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: #1a3c5e;
+}
+
+.hero-image img {
+  width: 480px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+
+  image-rendering: optimizeQuality;
+
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 220px;
+    margin-top: 30px;
+  }
+}

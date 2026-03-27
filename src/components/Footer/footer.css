@@ -1,0 +1,38 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer .social-media {
+  margin-top: 10px;
+}
+
+.footer .social-media a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer .footer-section {
+  margin-top: 20px;
+}
+
+.footer .footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer .footer-section p {
+  margin: 5px 0;
+}
+.footer .footer-section a {
+  color: #fff;
+  text-decoration: none;
+}   

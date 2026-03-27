@@ -1,0 +1,31 @@
+
+
+
+.appointment {
+  background-image: url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.appointment::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.appointment h1,
+.appointment form {
+  position: relative;
+  z-index: 1;
+}
+
+.appointment h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
